@@ -1,0 +1,18 @@
+api:
+  url: "https://api.hyperliquid.xyz"
+  account_address: "0xYourAddress"
+  secret_key: "yourPrivateKey"
+
+settings:
+  poll_interval: 60       # seconds
+  log_file: "bot.log"
+
+positions:
+  - asset: "BTC"
+    side: "long"
+    entry_price: 50000
+    rule: "macd_cross_below_minus40"
+  - asset: "ETH"
+    side: "short"
+    entry_price: 3000
+    rule: "rsi_above_70"
