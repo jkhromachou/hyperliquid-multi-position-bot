@@ -1,11 +1,15 @@
 api:
   url: "https://api.hyperliquid.xyz"
   account_address: "0xYourAddress"
-  secret_key: "yourPrivateKey"
+  secret_key: "yourSecretKey"
 
 settings:
-  poll_interval: 60       # seconds
+  poll_interval: 60
   log_file: "bot.log"
+
+webhooks:
+  discord: "https://discord.com/api/webhooks/XXXX/XXXX"
+  slack: "https://hooks.slack.com/services/T0000/B0000/XXXX"
 
 positions:
   - asset: "BTC"
